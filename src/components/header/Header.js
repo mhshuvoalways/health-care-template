@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 
 const Header = () => {
@@ -19,9 +19,7 @@ const Header = () => {
   return (
     <div
       className={
-        headerBg
-          ? "shadow-md w-full fixed bg-white z-10 transition-all"
-          : "w-full fixed transition-all"
+        headerBg ? "shadow-md w-full fixed bg-white z-10 transition-all" : "w-full fixed transition-all"
       }
     >
       <div className="w-10/12 m-auto flex justify-between items-center py-5">
@@ -31,61 +29,41 @@ const Header = () => {
         >
           <i className="fa-solid fa-bars"></i>
         </div>
-        <NavLink to="/" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img src={Logo} alt="Logo" className="" />
           <div className="flex text-2xl font-extrabold">
             <p>HEALTH</p>
             <p className="text-red-600">CARE</p>
           </div>
-        </NavLink>
+        </Link>
         <ul className="sm:flex gap-10 hidden">
           <li className="hover:text-red-600 transition-all">
-            <NavLink
-              to="/"
-              className={({ isActive }) => isActive && "text-red-600"}
-            >
-              Home
-            </NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink
-              to="/about"
-              className={({ isActive }) => isActive && "text-red-600"}
-            >
-              About
-            </NavLink>
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink
-              to="/contact"
-              className={({ isActive }) => isActive && "text-red-600"}
-            >
-              Contact
-            </NavLink>
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink
-              to="/login"
-              className={({ isActive }) => isActive && "text-red-600"}
-            >
-              Login
-            </NavLink>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </div>
       {menu && (
         <ul className="space-y-5 py-5 w-10/12 m-auto border-t block sm:hidden">
           <li className="hover:text-red-600 transition-all">
-            <NavLink to="/">Home</NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink to="/about">About</NavLink>
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink to="/contact">Contact</NavLink>
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <NavLink to="/login">Login</NavLink>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       )}

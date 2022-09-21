@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <div
       className={
-        headerBg ? "shadow-md w-full fixed bg-white z-10 transition-all" : "w-full fixed transition-all"
+        headerBg
+          ? "shadow-md bg-white w-full fixed z-10 transition-all"
+          : "w-full fixed z-10 transition-all"
       }
     >
       <div className="w-10/12 m-auto flex justify-between items-center py-5">
@@ -41,10 +43,13 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/signup">Sign up</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/about">About</Link>
+            <Link to="/company">For Companies</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/">For Patients</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/contact">Contact</Link>
@@ -60,7 +65,13 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/about">About</Link>
+            <Link to="/signup">Sign up</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/">For Companies</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/">For Patients</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/contact">Contact</Link>

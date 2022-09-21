@@ -41,6 +41,9 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
+            <Link to="/signup">Sign Up</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
             <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">

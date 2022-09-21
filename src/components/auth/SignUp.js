@@ -2,7 +2,7 @@ import React from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { NavLink, Link } from "react-router-dom";
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="bg-gray-200 py-20">
       <div className="w-10/12 m-auto">
@@ -18,16 +18,16 @@ const Login = () => {
             </NavLink>
             <p className="cursor-pointer text-2xl ">|</p>
             <NavLink
-              to="/register"
+              to="/signup"
               className={({ isActive }) =>
                 isActive ? "text-red-600 text-2xl" : " text-2xl"
               }
             >
-              Register
+              Sign Up
             </NavLink>
           </div>
           <div className="mt-10">
-            <p className="text-2xl mb-4">Register as a Company</p>
+            <p className="text-2xl mb-4">Sign Up as a Company</p>
             <form className="space-y-2">
               <div>
                 <label>Your First Name*</label>
@@ -78,14 +78,14 @@ const Login = () => {
                 />
               </div>
               <div>
-                <label>ReCAPTCHA*</label>
+                <label>Fill the Recaptcha*</label>
                 <br />
-                <ReCAPTCHA sitekey="6Lfk5MgcAAAAAP3QLHhsWot9le211BGzVs9PrUSJ" />
+                <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} />
               </div>
               <br />
               <Link to="/login">
                 <p className="bg-red-600 hover:bg-gray-900 text-gray-100 py-2 px-3 rounded-full w-full text-center">
-                  Register
+                  Sign Up
                 </p>
               </Link>
             </form>
@@ -96,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

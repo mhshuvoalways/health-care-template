@@ -17,12 +17,12 @@ const Login = () => {
             </NavLink>
             <p className="cursor-pointer text-2xl ">|</p>
             <NavLink
-              to="/register"
+              to="/signup"
               className={({ isActive }) =>
                 isActive ? "text-red-600 text-2xl" : " text-2xl"
               }
             >
-              Register
+              Sign Up
             </NavLink>
           </div>
           <div className="mt-10">

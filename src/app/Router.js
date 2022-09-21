@@ -4,7 +4,7 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import LoginPage from "../pages/LoginPage";
-import RegisterPage from "../pages/RegisterPage";
+import SignUpPage from "../pages/SignUpPage";
 import CompanyPage from "../pages/CompanyPage";
 import InfluencerPage from "../pages/InfluencerPage";
 
@@ -16,7 +16,7 @@ const Router = () => {
         <Route path="about" element={<AboutPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="login" element={<LoginPage />} />
-        <Route path="register" element={<RegisterPage />} />
+        <Route path="signup" element={<SignUpPage />} />
         <Route path="company" element={<CompanyPage />} />
         <Route path="influencer" element={<InfluencerPage />} />
       </Routes>

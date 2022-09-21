@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 import AuthBanner from "../components/banner/AuthBanner";
-import Register from "../components/auth/Register";
+import SignUp from "../components/auth/SignUp";
 import Footer from "../components/footer/Footer";
 
 const RegisterPage = () => {
@@ -9,7 +9,7 @@ const RegisterPage = () => {
     <div>
       <Header />
       <AuthBanner />
-      <Register />
+      <SignUp />
       <Footer />
     </div>
   );

@@ -28,17 +28,17 @@ const Contact = () => {
         <div className="w-full md:w-6/12">
           <iframe
             title="usmap"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917598.1275009983!2d14.163040921372223!3d44.42871238944692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133441080add95ed%3A0xa0f3c024e1661b7f!2sCroatia!5e0!3m2!1sen!2sbd!4v1663657336000!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.217451398805!2d7.596724615185373!3d47.56355739894432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9ba2ec3dac1%3A0xb3c518607b2e2096!2sRiehenring%2065%2C%204058%20Basel%2C%20Switzerland!5e0!3m2!1sen!2sbd!4v1663745597526!5m2!1sen!2sbd"
             width="100%"
             height="100%"
-            allowfullscreen
+            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <form className="w-full md:w-6/12 space-y-2">
           <div>
-            <label>Select Area*</label>
+            <label>Select*</label>
             <select
               className="p-3 my-2 text-gray-600 w-full bg-gray-100 rounded text-sm outline-none focus:outline-none focus:ring"
               onChange={onChangeHandler}

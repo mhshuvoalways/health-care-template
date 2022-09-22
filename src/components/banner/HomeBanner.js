@@ -4,11 +4,11 @@ import BannerImage from "../../assets/images/banner.jpg";
 const HomeBanner = () => {
   return (
     <div
-      className="bg-center bg-cover h-screen flex items-center"
+      className="bg-center bg-cover h-screen flex items-center pt-24 lg:pt-0"
       style={{ backgroundImage: `url(${BannerImage})` }}
     >
       <div className="w-10/12 m-auto">
-        <div className="space-y-5 w-full sm:w-1/2">
+        <div className="space-y-5 w-full md:w-1/2">
           <p className="text-xl border-b-2 pb-2 w-60 border-red-600 text-gray-600">
             INSPIRING BETTER HEALTH
           </p>

@@ -20,16 +20,20 @@ const Header = () => {
     <div
       className={
         headerBg
-          ? "shadow-md bg-white w-full fixed z-10 transition-all"
+          ? "shadow-sm bg-white w-full fixed z-10 transition-all"
           : "w-full fixed z-10 transition-all"
       }
     >
       <div className="w-10/12 m-auto flex justify-between items-center py-5">
         <div
-          className="sm:hidden hover:bg-gray-100 rounded-md w-7 h-6 flex justify-center items-center cursor-pointer gap-5"
+          className="lg:hidden bg-gray-100 rounded-sm w-7 h-6 flex justify-center items-center cursor-pointer gap-5"
           onClick={() => setMenu(!menu)}
         >
-          <i className="fa-solid fa-bars"></i>
+          {menu ? (
+            <i className="fa-solid fa-xmark"></i>
+          ) : (
+            <i className="fa-solid fa-bars"></i>
+          )}
         </div>
         <Link to="/" className="flex items-center gap-3">
           <img src={Logo} alt="Logo" className="" />
@@ -38,21 +42,21 @@ const Header = () => {
             <p className="text-red-600">CARE</p>
           </div>
         </Link>
-        <ul className="sm:flex gap-10 hidden">
+        <ul className="lg:flex gap-10 hidden">
           <li className="hover:text-red-600 transition-all">
             <Link to="/">Home</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/signup">Signup</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/company">Companies</Link>
+            <Link to="/commingsoon">Companies</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/">Patients</Link>
+            <Link to="/commingsoon">Patients</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/contact">Contact</Link>
@@ -63,29 +67,31 @@ const Header = () => {
         </ul>
       </div>
       {menu && (
-        <ul className="space-y-5 py-5 w-10/12 m-auto border-t block sm:hidden">
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/signup">Sign up</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/">For Companies</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/">For Patients</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className="hover:text-red-600 transition-all">
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
+        <div className="bg-gray-100">
+          <ul className="space-y-5 py-5 w-10/12 m-auto border-t block lg:hidden">
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/signup">Signup</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/commingsoon">Companies</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/commingsoon">Patients</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="hover:text-red-600 transition-all">
+              <Link to="/login">Login</Link>
+            </li>
+          </ul>
+        </div>
       )}
     </div>
   );

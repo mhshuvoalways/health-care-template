@@ -20,8 +20,8 @@ const Header = () => {
     <div
       className={
         headerBg
-          ? "shadow-sm bg-white w-full fixed z-10 transition-all"
-          : "w-full fixed z-10 transition-all"
+          ? "shadow-sm bg-white w-full fixed z-10 transition-all h-24"
+          : "w-full fixed z-10 transition-all h-24"
       }
     >
       <div className="w-10/12 m-auto flex justify-between items-center py-5">

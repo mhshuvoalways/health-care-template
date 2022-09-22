@@ -43,13 +43,16 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/signup">Sign up</Link>
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/company">For Companies</Link>
+            <Link to="/signup">Signup</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
-            <Link to="/">For Patients</Link>
+            <Link to="/company">Companies</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/">Patients</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/contact">Contact</Link>
@@ -63,6 +66,9 @@ const Header = () => {
         <ul className="space-y-5 py-5 w-10/12 m-auto border-t block sm:hidden">
           <li className="hover:text-red-600 transition-all">
             <Link to="/">Home</Link>
+          </li>
+          <li className="hover:text-red-600 transition-all">
+            <Link to="/about">About</Link>
           </li>
           <li className="hover:text-red-600 transition-all">
             <Link to="/signup">Sign up</Link>

@@ -59,9 +59,9 @@ const Company = () => {
           </tr>
         </table>
         <select className="border w-full py-2 focus:ring outline-none">
-          <option>campaign-1</option>
-          <option>campaign-2</option>
-          <option>campaign-3</option>
+          <option>Campaign 1</option>
+          <option>Campaign 2</option>
+          <option>Campaign 3</option>
         </select>
       </div>
     </div>

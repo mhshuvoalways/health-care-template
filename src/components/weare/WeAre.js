@@ -32,7 +32,7 @@ const WeAre = () => {
           </div>
         </div>
         <Link to="/signup">
-          <p className="bg-gray-900 hover:bg-red-600 text-gray-100 py-3 hover:border px-10 rounded-full text-center mt-10 w-full sm:w-3/12">
+          <p className="bg-gray-900 hover:bg-red-600 text-gray-100 py-3 border border-gray-900 px-10 rounded-full text-center mt-10 w-full sm:w-3/12">
             Sign Up
           </p>
         </Link>

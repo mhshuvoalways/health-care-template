@@ -38,7 +38,7 @@ const References = () => {
     <div className="w-10/12 m-auto mt-20">
       <div className="w-full sm:w-3/5 m-auto space-y-5 mb-14">
         <p className="tracking-widest text-gray-600 text-center">REFERENCES</p>
-        <p className="text-center text-3xl">
+        <p className="text-center text-2xl md:text-3xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a
           porta urna.
         </p>

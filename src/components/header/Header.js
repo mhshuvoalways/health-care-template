@@ -20,13 +20,15 @@ const Header = () => {
     <div
       className={
         headerBg
-          ? "shadow-sm bg-white w-full fixed z-10 transition-all h-24"
-          : "w-full fixed z-10 transition-all h-24"
+          ? "shadow-sm bg-white w-full fixed z-10 transition-all"
+          : menu
+          ? "w-full fixed z-10 transition-all bg-white"
+          : "w-full fixed z-10 transition-all"
       }
     >
       <div className="w-10/12 m-auto flex justify-between items-center py-5">
         <div
-          className="lg:hidden bg-gray-100 rounded-sm w-7 h-6 flex justify-center items-center cursor-pointer gap-5"
+          className="lg:hidden rounded-sm w-7 h-6 flex justify-center items-center cursor-pointer gap-5"
           onClick={() => setMenu(!menu)}
         >
           {menu ? (
@@ -67,7 +69,7 @@ const Header = () => {
         </ul>
       </div>
       {menu && (
-        <div className="bg-gray-100">
+        <div className="bg-white border">
           <ul className="space-y-5 py-5 w-10/12 m-auto border-t block lg:hidden">
             <li className="hover:text-red-600 transition-all">
               <Link to="/">Home</Link>

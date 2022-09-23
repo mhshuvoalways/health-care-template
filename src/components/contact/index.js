@@ -38,15 +38,15 @@ const Contact = () => {
         </div>
         <form className="w-full md:w-6/12 space-y-2">
           <div>
-            <label>Who I am*</label>
+            <label className="text-xl">I am*</label>
             <select
               className="p-3 my-2 text-gray-600 w-full bg-gray-100 rounded text-sm outline-none focus:outline-none focus:ring"
               onChange={onChangeHandler}
             >
-              <option value="company">I'm a Company</option>
-              <option value="influencer">I'm an Influencer</option>
-              <option value="media">I'm a Media</option>
-              <option value="other">I'm Other</option>
+              <option value="company">Company</option>
+              <option value="influencer">Influencer</option>
+              <option value="media">Media</option>
+              <option value="other">Other</option>
             </select>
           </div>
           {state === "company" && <CompanyForm />}

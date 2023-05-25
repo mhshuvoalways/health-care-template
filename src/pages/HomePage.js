@@ -15,8 +15,8 @@ const HomePage = () => {
       <Header />
       <Banner />
       <WeAre />
-      <Services />
       <Goal />
+      <Services />
       <References />
       <Testimonials />
       <Team />

@@ -4,7 +4,7 @@ import Weare from "../../assets/images/weare.webp";
 
 const WeAre = () => {
   return (
-    <div className="bg-red-600 py-20 mb-20">
+    <div className="bg-red-600 py-20">
       <div className="w-10/12 m-auto">
         <div className="flex flex-wrap md:flex-nowrap gap-10 items-center">
           <div className="w-full md:w-6/12 space-y-5 text-gray-100">

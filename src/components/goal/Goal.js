@@ -3,7 +3,7 @@ import Mobile from "../../assets/images/mobile.webp";
 
 const Goal = () => {
   return (
-    <div className="bg-gray-200 mt-20 py-20">
+    <div className="bg-gray-200 py-20">
       <div className="w-10/12 m-auto flex md:gap-20 gap-10 justify-center flex-wrap">
         <img src={Mobile} alt="" className="w-1/5" />
         <div className="w-full md:w-2/4">
